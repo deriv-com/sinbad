@@ -5,6 +5,7 @@ require('dotenv').config({
 const site_url = 'https://sinbad.dev'
 
 module.exports = {
+    pathPrefix: '/sinbad',
     flags: {
         FAST_DEV: true,
     },
