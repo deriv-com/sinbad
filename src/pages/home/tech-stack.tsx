@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Dashboard from 'images/common/dashboard.png'
+import { StaticImage } from 'gatsby-plugin-image'
 import { ContainerWrapper } from 'components/containers'
 import device from 'themes/device'
 import { BlueBackground } from 'images/common/jd'
@@ -30,20 +30,6 @@ const TechStackContainerWrapper = styled(ContainerWrapper)`
     }
     @media ${device.laptopM} {
         padding: 30px 0 0;
-    }
-`
-
-const TechDashboard = styled.img`
-    max-width: 800px;
-    max-height: 600px;
-
-    @media ${device.tabletL} {
-        max-width: 600px;
-        max-height: 500px;
-    }
-    @media ${device.tabletS} {
-        max-width: 400px;
-        max-height: 400px;
     }
 `
 
@@ -128,7 +114,12 @@ const TechStack = () => {
     return (
         <TechStackContainer>
             <TechStackContainerWrapper>
-                <TechDashboard src={Dashboard} />
+                <StaticImage
+                    src="../../images/common/dashboard.png"
+                    alt="tech dashboard"
+                    placeholder="tracedSVG"
+                    objectFit="scale-down"
+                />
                 <TermsTextContainer>
                     <SectionLabel />
                     <StyledHeader>Tech stack</StyledHeader>
