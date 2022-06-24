@@ -73,6 +73,7 @@ const PageNotFound = () => {
                             alt="Page not found"
                             width="450"
                             height="450"
+                            placeholder="tracedSVG"
                         />
                         <PageNotFoundContainerInfo>
                             <Header>We couldn’t find that page</Header>
