@@ -262,9 +262,7 @@ const Welcome = () => {
         <WelcomeContainer>
             <ContainerWrapper>
                 <TextContainer>
-                    <StyledHeader>
-                        Welcome to <strong>Sinbad Software</strong>
-                    </StyledHeader>
+                    <StyledHeader>Welcome to Sinbad Software</StyledHeader>
                     <StyledText>
                         Sinbad Software LLC provides software development services and IT solutions
                         for the fintech industry. At every step of the way, we aim to give our

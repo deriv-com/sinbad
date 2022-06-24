@@ -62,7 +62,7 @@ const StyledHeader = styled.div<{ font_family?: string; mobile_padding?: string;
     color: var(--color-black-3);
     color: ${(props) => props.color || 'var(--color-black-3)'};
     font-weight: 640;
-    font-family: ${(props) => props.font_family || 'Maven Pro Bold'};
+    font-family: ${(props) => props.font_family || 'Maven Pro'};
     padding: 20px 0;
     text-align: left;
     text-transform: uppercase;

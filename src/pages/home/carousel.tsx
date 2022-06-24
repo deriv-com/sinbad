@@ -146,7 +146,7 @@ const StyledUpperText = styled(BasicText)`
     line-height: 59px;
     color: var(--color-black-3);
     font-weight: 640;
-    font-family: ${(props) => props.font_family || 'Maven Pro Bold'};
+    font-family: ${(props) => props.font_family || 'Maven Pro'};
     text-transform: uppercase;
 
     @media ${device.laptop} {
