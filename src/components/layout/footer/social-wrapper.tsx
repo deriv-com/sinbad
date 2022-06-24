@@ -23,6 +23,7 @@ const ContactText = styled.div`
     padding-top: 10px;
     padding-left: 10px;
     justify-content: center;
+    cursor: pointer;
 `
 
 const ContactImage = styled.img`
@@ -66,6 +67,11 @@ const contacts = [
 ]
 
 const SocialWrapperComponent = () => {
+    const sendMailToSinbad = () => {
+        const link = 'mailto:information@sinbad.software'
+        window.location.href = link
+    }
+
     return (
         <SocialWrapper>
             {contacts.map((contact) => (
@@ -73,10 +79,17 @@ const SocialWrapperComponent = () => {
                     <ContactLink to={'mailto:information@sinbad.software'}>
                         <ContactImage src={contact.image} />
                     </ContactLink>
-                    <div>
-                        <ContactText>{contact.info}</ContactText>
-                        <ContactText>{contact.details}</ContactText>
-                    </div>
+                    {contact.id == 2 ? (
+                        <div onClick={sendMailToSinbad}>
+                            <ContactText>{contact.info}</ContactText>
+                            <ContactText>{contact.details}</ContactText>
+                        </div>
+                    ) : (
+                        <div>
+                            <ContactText>{contact.info}</ContactText>
+                            <ContactText>{contact.details}</ContactText>
+                        </div>
+                    )}
                 </ContactContainer>
             ))}
         </SocialWrapper>
