@@ -52,9 +52,8 @@ const contacts = [
         info: 'Sinbad Software LLC',
         details:
             '2201, 22nd Floor, One by Omniyat Building, Al Mustaqbal Street, Business Bay, Dubai, UAE',
-        to: 'https://goo.gl/maps/8Lb4NbYoUpikKJxS6',
-        target: '_blank',
-        only_mobile: false,
+        target: '_self',
+        only_mobile: true,
     },
     {
         id: 1,
