@@ -6,6 +6,7 @@ import { JoinUs, OurTerms, TechStack } from './home'
 import Layout from 'components/layout/layout'
 
 const Home = () => {
+    console.log({ message: 'RELEASE TRIGGER TEST' })
     return (
         <Layout>
             <Helmet>
