@@ -14,6 +14,7 @@ type PositionsType = {
     icon: ReactNode
     position: string
     text: string
+    link: string
 }
 
 const OpenPositionsContainer = styled.div`
@@ -109,6 +110,7 @@ const positions: PositionsType[] = [
         ),
         position: 'Information technology',
         text: 'Provide the best solutions for our clients by taking a holistic view of our technical environment.',
+        link: '/job-description/front-end-dev',
     },
     {
         icon: (
@@ -120,6 +122,7 @@ const positions: PositionsType[] = [
         ),
         position: 'Product design',
         text: 'Deliver intuitive and beautiful designs that will impress our clients and help them reach their goals.',
+        link: '/job-description/motion-designer',
     },
     {
         icon: (
@@ -131,6 +134,7 @@ const positions: PositionsType[] = [
         ),
         position: 'Business intelligence',
         text: 'Provide analytical and strategic insights that enhance the growth of our clients’ businesses, products, and services.',
+        link: '/job-description/data-analyst',
     },
 ]
 
@@ -143,7 +147,7 @@ const OpenPositions = () => {
                     <StyledHeader>Make your passion your career</StyledHeader>
                 </HeaderContainer>
                 <CardContainer>
-                    {positions.map(({ position, text, icon }, index) => {
+                    {positions.map(({ position, text, icon, link }, index) => {
                         return (
                             <Card
                                 key={index}
@@ -161,7 +165,7 @@ const OpenPositions = () => {
                                 </ImageContainer>
                                 <CardHeader>{position}</CardHeader>
                                 <CardText>{text}</CardText>
-                                <LinkContainer to={'/open-positions'}>
+                                <LinkContainer to={link}>
                                     <CardLinkText>See jobs</CardLinkText>
                                     <CardButton>
                                         <StaticImage
