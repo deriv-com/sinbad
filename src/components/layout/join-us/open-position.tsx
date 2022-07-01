@@ -21,7 +21,7 @@ const JoinUsWrapper = styled(JoinUsContainer)`
     justify-content: space-evenly;
     background-repeat: no-repeat;
     background-image: url(${Banner});
-    background-size: 47.5% 65%;
+    background-size: 52.8% 65%;
     width: 100%;
 `
 
