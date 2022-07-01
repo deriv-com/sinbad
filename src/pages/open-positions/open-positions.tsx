@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Text } from 'components/containers/main'
 import { ContainerWrapper } from 'components/containers/common/style'
@@ -97,7 +98,7 @@ const StyledHeader = styled.div<StyledProps>`
     }
 `
 
-const StyledHeaderText = styled.div<StyledProps>`
+const StyledLink = styled(Link)<StyledProps>`
     font-size: 1.6rem;
     line-height: 27px;
     color: ${(props) => props.color || 'var(--color-black-3)'};
@@ -107,6 +108,12 @@ const StyledHeaderText = styled.div<StyledProps>`
     padding: ${(props) => props.padding || 'unset'};
     padding-bottom: 10px;
     text-transform: ${(props) => props.text_transform || 'uppercase'};
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--color-sand-4);
+    }
 
     @media ${device.laptopM} {
         max-width: 320px;
@@ -185,19 +192,27 @@ const OpenPositions = () => {
                     <StyledHeader text_align="left" border_bottom="2px solid var(--color-sand-1)">
                         Open positions
                     </StyledHeader>
-                    <StyledHeaderText padding="30px 0 10px">Back-end Development</StyledHeaderText>
-                    <StyledHeaderText>Business Intelligence</StyledHeaderText>
-                    <StyledHeaderText>DevOps</StyledHeaderText>
-                    <StyledHeaderText>Quantitative Analysis</StyledHeaderText>
-                    <StyledHeaderText>Mobile app Development</StyledHeaderText>
-                    <StyledHeaderText
-                        color="var(--color-black-3)"
+                    <StyledLink padding="30px 0 10px" to={'/job-description/back-end-dev'}>
+                        Back-end Development
+                    </StyledLink>
+                    <StyledLink to={'/job-description/data-analyst'}>
+                        Business Intelligence
+                    </StyledLink>
+                    <StyledLink to={'/job-description/dev-ops'}>DevOps</StyledLink>
+                    <StyledLink to={'/job-description/quantitative-analyst'}>
+                        Quantitative Analysis
+                    </StyledLink>
+                    <StyledLink to={'/job-description/flutter-developer'}>
+                        Mobile app Development
+                    </StyledLink>
+                    <StyledHeader
                         font_size="18px"
                         padding="25px 0"
                         text_transform="unset"
+                        text_align="left"
                     >
                         and more...
-                    </StyledHeaderText>
+                    </StyledHeader>
                 </OpenPositionsInfo>
             </OpenPositionsContainerWrapper>
         </OpenPositionsContainer>
