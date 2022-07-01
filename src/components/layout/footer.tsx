@@ -20,6 +20,10 @@ const StyledFooterLink = styled(Link)<CSSElementProps>`
     cursor: pointer;
     border-right: ${(props) => props.borderRight || '1px solid white'};
     padding: 0 25px;
+
+    &:hover {
+        color: var(--color-sand-4);
+    }
 `
 const StyledFooterText = styled.div<CSSElementProps>`
     font-size: 1.7rem;
