@@ -82,6 +82,7 @@ const CardHeader = styled.div<{ font_family?: string }>`
     font-weight: 560;
     font-family: ${(props) => props.font_family || 'Maven Pro Bold'};
     padding: 25px 10px 0;
+    text-align: center;
 `
 
 const LocationContainer = styled(Flex)`
