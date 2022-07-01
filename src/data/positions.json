@@ -344,8 +344,8 @@
         ],
         "good_to_have": [
             "Familiarity with C++ and .Net",
-            "Experience in Infrastructure as code methodology (Terraform)",
-            "Experience in Configuration as code methodology and configuration management platforms (Octopus Deploy)",
+            "Experience in Infrastructure as code (IaC) methodology (Terraform)",
+            "Experience in Configuration as code (CaC) methodology and configuration management platforms (Octopus Deploy)",
             "Experience in Version control software (Git)"
         ]
     },
