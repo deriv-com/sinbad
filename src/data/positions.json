@@ -419,11 +419,11 @@
             "Experience with Terraform and Kubernetes",
             "Familiarity with Perl, Python, and other scripting languages",
             "Knowledge of industry-accepted IS standards",
-            "Experience in Hardening Linux systems",
+            "Experience in hardening Linux systems",
             "Experience in CI tools such as Travis-CI, CircleCI, Jenkins etc",
-            "Experience in Documentation of processes and incidents",
-            "Experience in Version Control software (Git)",
-            "Experience in Windows Server Administration (IIS, MS-SQL)"
+            "Experience in documentation of processes and incidents",
+            "Experience in version control software (Git)",
+            "Experience in Windows Server administration (IIS, MS-SQL)"
         ]
     }
 ]
