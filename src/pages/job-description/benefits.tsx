@@ -113,6 +113,7 @@ const StyledText = styled.div<{ font_family?: string }>`
     font-family: ${(props) => props.font_family || 'Maven Pro'};
     text-align: left;
     padding-bottom: 10px;
+    font-weight: bold;
 `
 
 const data = [
@@ -159,14 +160,14 @@ const BenefitsList = () => {
                         direction="row"
                         ai="center"
                         jc="flex-end"
-                        width="auto"
+                        width="370px"
                         height="180px"
                         margin="50px 15px 15px 15px"
                         padding="0 20px"
                     >
                         <LocationImageContainer>
                             <StyledSSText font_family="Maven Pro Bold">Location</StyledSSText>
-                            <StyledText>Dubai, the UAE</StyledText>
+                            <StyledText font_family="Maven Pro Bold">Dubai, the UAE</StyledText>
                         </LocationImageContainer>
                         <StaticImage
                             src="../../images/common/jd/location.png"
