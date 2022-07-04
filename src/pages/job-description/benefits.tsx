@@ -1,5 +1,4 @@
 import React from 'react'
-import { StaticImage } from 'gatsby-plugin-image'
 import styled from 'styled-components'
 import { ContainerWrapper, Flex } from 'components/containers'
 import { Card } from 'components/containers/flex'
@@ -12,6 +11,7 @@ import {
     DressCode,
     Contract,
     BlueBackground,
+    Location,
 } from 'images/common/jd'
 
 const BenefitsContainer = styled.div`
@@ -54,19 +54,6 @@ const BenefitsImageContainer = styled.div`
     padding: 30px 0;
 `
 
-const LocationImageContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    padding-top: 30px;
-
-    div:nth-child(1) {
-        text-transform: uppercase;
-        font-size: 3.8rem;
-    }
-`
-
 const StyledImg = styled.img`
     padding-right: 50px;
 `
@@ -93,27 +80,6 @@ const LocationContainer = styled(Flex)`
     @media (max-width: 1335px) {
         justify-content: center;
     }
-`
-
-const StyledSSText = styled.div<{ font_family?: string }>`
-    padding: unset;
-    color: var(--color-sand-4);
-    font-size: 3.3rem;
-    line-height: 62px;
-    font-weight: 656;
-    font-family: ${(props) => props.font_family || 'Maven Pro'};
-    padding-right: 5px;
-`
-const StyledText = styled.div<{ font_family?: string }>`
-    max-width: 350px;
-    font-size: 1.6rem;
-    line-height: 27px;
-    color: #1b1b1b;
-    font-weight: 320;
-    font-family: ${(props) => props.font_family || 'Maven Pro'};
-    text-align: left;
-    padding-bottom: 10px;
-    font-weight: bold;
 `
 
 const data = [
@@ -157,23 +123,19 @@ const BenefitsList = () => {
                 </Flex>
                 <LocationContainer>
                     <Card
-                        direction="row"
                         ai="center"
-                        jc="flex-end"
-                        width="370px"
-                        height="180px"
-                        margin="50px 15px 15px 15px"
-                        padding="0 20px"
+                        fd="column"
+                        jc="center"
+                        max_width="370px"
+                        height="280px"
+                        padding="55px 0"
+                        margin="15px"
+                        border_radius="5px"
                     >
-                        <LocationImageContainer>
-                            <StyledSSText font_family="Maven Pro Bold">Location</StyledSSText>
-                            <StyledText font_family="Maven Pro Bold">Dubai, the UAE</StyledText>
-                        </LocationImageContainer>
-                        <StaticImage
-                            src="../../images/common/jd/location.png"
-                            alt="location"
-                            placeholder="tracedSVG"
-                        />
+                        <img src={Location} />
+                        <CardInfo>
+                            <CardHeader>Dubai, the UAE</CardHeader>
+                        </CardInfo>
                     </Card>
                 </LocationContainer>
             </BenefitsContainerWrapper>
