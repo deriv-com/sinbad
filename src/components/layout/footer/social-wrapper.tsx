@@ -18,7 +18,7 @@ const ContactIcon = styled.div<CSSElementProps>`
 `
 
 const ContactText = styled.div<CSSElementProps>`
-    max-width: 250px;
+    max-width: 280px;
     font-size: 1.6rem;
     line-height: 20px;
     color: white;
@@ -61,7 +61,7 @@ const contacts = [
         id: 1,
         image: PhoneSvg,
         info: 'Phone:',
-        details: '+971 50 861-1678',
+        details: '+97145598600',
         to: `tel:${MOBILE}`,
         target: '_self',
         only_mobile: true,
