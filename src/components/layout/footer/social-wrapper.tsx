@@ -18,7 +18,7 @@ const ContactIcon = styled.div<CSSElementProps>`
 `
 
 const ContactText = styled.div<CSSElementProps>`
-    max-width: 280px;
+    min-width: 280px;
     font-size: 1.6rem;
     line-height: 20px;
     color: white;
