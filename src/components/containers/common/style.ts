@@ -42,6 +42,7 @@ export const SocialWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     padding-top: 100px;
+    width: 100%;
 
     @media ${device.tabletL} {
         display: flex;
@@ -50,7 +51,6 @@ export const SocialWrapper = styled.div`
         justify-content: center;
         margin: 3rem 0 1rem;
         padding-top: 10px;
-
         a:first-child {
             img {
                 margin-left: 0;
