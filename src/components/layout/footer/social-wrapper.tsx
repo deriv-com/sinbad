@@ -74,7 +74,7 @@ const contacts = [
         to: `mailto:${EMAIL}`,
         target: '_blank',
         only_mobile: false,
-        min_width: '280px',
+        min_width: '285px',
     },
 ]
 
