@@ -18,7 +18,7 @@ const ContactIcon = styled.div<CSSElementProps>`
 `
 
 const ContactText = styled.div<CSSElementProps>`
-    min-width: 280px;
+    max-width: 265px;
     font-size: 1.6rem;
     line-height: 20px;
     color: white;
@@ -74,13 +74,14 @@ const contacts = [
         to: `mailto:${EMAIL}`,
         target: '_blank',
         only_mobile: false,
+        min_width: '280px',
     },
 ]
 
 const SocialWrapperComponent = () => {
     return (
         <SocialWrapper>
-            {contacts.map(({ id, image, info, details, to, target, only_mobile }) => (
+            {contacts.map(({ id, image, info, details, to, target, only_mobile, min_width }) => (
                 <ContactContainer
                     key={id}
                     cursor={only_mobile ? 'unset' : 'pointer'}
@@ -98,7 +99,7 @@ const SocialWrapperComponent = () => {
                     </ContactIcon>
                     <div>
                         <ContactText>{info}</ContactText>
-                        <ContactText>{details}</ContactText>
+                        <ContactText style={{ minWidth: min_width }}>{details}</ContactText>
                     </div>
                 </ContactContainer>
             ))}
