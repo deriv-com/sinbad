@@ -1,0 +1,8 @@
+name: build
+description: Build for release
+runs:
+ steps:
+ - name: Building Application
+   run: |-
+         npm run build
+   shell: bash
