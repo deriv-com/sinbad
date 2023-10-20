@@ -1,0 +1,15 @@
+name: Sinbad Test Workflow
+on:
+  pull_request:
+    branches:
+    - master
+jobs:
+  build_and_test:
+    name: Build And Test
+    runs-on: ubuntu_latest
+    environment: Development
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Npm Install
+      uses: "./.github/actions/npm_install"
