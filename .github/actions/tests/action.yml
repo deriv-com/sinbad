@@ -1,0 +1,7 @@
+name: run_test
+description: Run tests after creating PR
+runs:
+ steps:
+ - name: Run Tests
+   run: npm run test
+   shell: bash
