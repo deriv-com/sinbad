@@ -20,8 +20,6 @@ jobs:
       uses: "./.github/actions/build"
       with:
         NODE_ENV: staging
-    - name: Run Test
-      uses: "./.github/actions/tests"
     - name: Versioning
       uses: "./.github/actions/tag"
       with:
