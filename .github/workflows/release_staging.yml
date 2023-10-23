@@ -20,13 +20,6 @@ jobs:
       uses: "./.github/actions/build"
       with:
         NODE_ENV: staging
-    - name: Versioning
-      uses: "./.github/actions/tag"
-      with:
-        release_type: staging
-    - name: Extract version
-      id: extract_version
-      run: echo "RELEASE_VERSION=${version}" >> $GITHUB_OUTPUT
     - name: Publish to Cloudflare Pages Staging
       uses: "./.github/actions/publish_to_pages_staging"
       with:

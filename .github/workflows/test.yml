@@ -13,3 +13,5 @@ jobs:
       uses: actions/checkout@v4
     - name: Npm Install
       uses: "./.github/actions/npm_install"
+    - name: Build
+      uses: "./.github/actions/build"
