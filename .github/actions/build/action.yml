@@ -1,4 +1,4 @@
-name: build
+name: Build
 description: Build for release
 runs:
  steps:

@@ -1,4 +1,4 @@
-name: versioning
+name: Versioning
 description: Versioning
 inputs:
   RELEASE_TYPE:

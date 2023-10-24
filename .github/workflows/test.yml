@@ -5,13 +5,13 @@ on:
     - master
 jobs:
   build_and_test:
-    name: Build And Test
+    name: Build and Test
     runs-on: ubuntu_latest
     environment: Development
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-    - name: Npm Install
+    - name: Install npm packages
       uses: "./.github/actions/npm_install"
     - name: Build
       uses: "./.github/actions/build"

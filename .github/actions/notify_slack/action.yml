@@ -1,4 +1,4 @@
-name: notify slack
+name: Notify slack
 description: Notify Slack
 inputs:
   SLACK_WEBHOOK:
