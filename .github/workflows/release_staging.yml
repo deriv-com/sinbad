@@ -14,7 +14,7 @@ jobs:
     - name: Tag
       uses: "./.github/actions/tag"
     - name: Install npm packages
-      uses: "./.github/actions/npm_install"
+      uses: "./.github/actions/npm_install_from_cache"
     - name: Build
       uses: "./.github/actions/build"
       with:

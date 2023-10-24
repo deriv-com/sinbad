@@ -1,9 +1,0 @@
-name: npm_install
-description: Install NPM packages
-runs:
- steps:
- - name: Install npm packages
-   run: |-
-         npm ci
-         npm run format
-   shell: bash

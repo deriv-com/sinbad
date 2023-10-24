@@ -11,6 +11,6 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
     - name: Install npm packages
-      uses: "./.github/actions/npm_install"
+      uses: "./.github/actions/npm_install_from_cache"
     - name: Build
       uses: "./.github/actions/build"
