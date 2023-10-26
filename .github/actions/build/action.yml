@@ -2,6 +2,7 @@ name: Build
 description: Build for release
 runs:
  steps:
+   using: composite
  - name: Building Application
    run: npm run build
    shell: bash
