@@ -1,6 +1,7 @@
 name: Build
 description: Build for release
 runs:
+ using: composite
  steps:
  - name: Building Application
    run: npm run build
