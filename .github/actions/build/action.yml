@@ -1,8 +1,8 @@
 name: Build
 description: Build for release
 runs:
+ using: composite
  steps:
-   using: composite
  - name: Building Application
    run: npm run build
    shell: bash
