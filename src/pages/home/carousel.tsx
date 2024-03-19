@@ -269,7 +269,9 @@ const Carousel = () => {
                     </StyledUpperText>
                     {data.map(
                         (current_item, index) =>
-                            index == active && <TextLabel>{current_item.text}</TextLabel>,
+                            index == active && (
+                                <TextLabel key={current_item.text}>{current_item.text}</TextLabel>
+                            ),
                     )}
 
                     <PickerContainer>
