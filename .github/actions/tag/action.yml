@@ -12,10 +12,12 @@ runs:
 
   steps:
     - name: Set Version
+      env:
+        RELEASE_TYPE: ${{ inputs.RELEASE_TYPE }}
       id: set_version
       run: |
         current_date=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
-        version="${{ inputs.RELEASE_TYPE }}-GH_Run#:${{ github.run_number }}-Date:$current_date"
+        version="${RELEASE_TYPE}-GH_Run#:${{ github.run_number }}-Date:$current_date"
         echo "Setting version to: $version"
         echo "version=$version" >> $GITHUB_ENV
       shell: bash
