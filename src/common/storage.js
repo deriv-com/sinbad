@@ -140,7 +140,7 @@ const CookieStorage = function (cookie_name, cookie_domain) {
     if (is_allowed) {
         this.domain = parsedHostname
     }  else {
-        this.domain = cookie_domain ?? String(hostname)
+        this.domain = cookie_domain
     }
     this.path = '/'
     this.same_site = 'none'
