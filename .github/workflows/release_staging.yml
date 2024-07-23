@@ -26,10 +26,6 @@ jobs:
       with:
         CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-  publish_to_vercel:
-    runs-on: ubuntu-latest
-    environment: staging
-    steps: 
     - name: Upload to vercel
       uses: 'deriv-com/shared-actions/.github/actions/vercel_DR_publish@master'
       with:
