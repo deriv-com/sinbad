@@ -1,5 +1,5 @@
 {
   "cleanUrls": true,
-  "outputDirectory": "dist",
+  "outputDirectory": "public",
   "buildCommand": "echo ✅  Skipping build to use existing built files"
 }
