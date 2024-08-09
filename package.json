@@ -117,10 +117,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/binary-com/sinbad"
+        "url": "https://github.com/deriv-com/sinbad"
     },
     "bugs": {
-        "url": "https://github.com/binary-com/sinbad/issues"
+        "url": "https://github.com/deriv-com/sinbad/issues"
     },
     "engines": {
         "npm": ">=6.9.0"
