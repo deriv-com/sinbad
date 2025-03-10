@@ -2,7 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import Carousel from './home/carousel'
 import Welcome from './home/welcome'
-import { JoinUs, OurTerms, TechStack } from './home'
+import { JoinUs, OurTerms, TechStack } from '../loadables/home'
 import Layout from 'components/layout/layout'
 
 const Home = () => {

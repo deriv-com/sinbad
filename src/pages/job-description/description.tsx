@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { StaticImage } from 'gatsby-plugin-image'
-import { JobTitleProps } from './data'
+import { JobTitleProps } from 'data/job-description-data'
 import { Card } from 'components/containers/flex'
 import { ContainerWrapper, Header } from 'components/containers'
 import { BlueBackground } from 'images/common/jd'

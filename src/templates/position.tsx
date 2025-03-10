@@ -6,7 +6,7 @@ import JobTitle from '../pages/job-description/job-title'
 import BenefitsList from '../pages/job-description/benefits'
 import Positions from 'data/positions.json'
 import Layout from 'components/layout/layout'
-import { JoinUs } from 'pages/home'
+import { JoinUs } from '../loadables/home'
 
 const JobDescription = (props: PageProps) => {
     const position = Positions?.find(({ id }) => id === props.pageContext.slug)
