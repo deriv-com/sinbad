@@ -5,7 +5,7 @@ import { Text } from 'components/containers/main'
 import { ContainerWrapper } from 'components/containers/common/style'
 import Flex, { Card, CardButton, LinkContainer } from 'components/containers/flex'
 import device from 'themes/device'
-import { positions } from 'pages/job-description/data'
+import { positions } from 'data/job-description-data'
 import { BlueBackground } from 'images/common/jd'
 
 type StyledProps = {

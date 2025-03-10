@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { StaticImage } from 'gatsby-plugin-image'
-import { JobTitleProps } from './data'
+import { JobTitleProps } from 'data/job-description-data'
 import { ContainerWrapper, ImageContainer } from 'components/containers'
 import Background from 'images/common/background.png'
 import device from 'themes/device'

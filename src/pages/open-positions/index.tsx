@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet'
 import Hero from './hero'
 import OpenPositions from './open-positions'
 import Layout from 'components/layout/layout'
-import { JoinUs } from 'pages/home'
+import { JoinUs } from '../../loadables/home'
 
 const Positions = () => {
     return (
